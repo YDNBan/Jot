@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose')
 const userRoutes = require('./routes/userRoutes');
+const noteRoutes = require('./routes/noteRoutes');
 
 // Create Express App
 const app = express();
@@ -22,6 +23,7 @@ mongoose.connect(process.env.MONGO_URI)
 }).catch(err=>console.log(err));
 
 
-app.use('/users', userRoutes)
+app.use('/users', userRoutes);
+app.use('/notes', noteRoutes);
 
 
