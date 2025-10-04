@@ -1,0 +1,13 @@
+This file is to showcase to myself as well as curious readers to the things I've learned working on this project.
+
+v - - 10/4/2025 - - v
+
+Had a sudden realization with server-rendered application vs full-stack applications. In my undergrad classes such as Software Engineering
+and Net-App Development, typically when handling what to do with data at the end of a function we would typically do something like
+res.render(...) or something similiar if it was a differnet language. Point is, we handled the rendering / directly interact with the UI in
+the backend because (ofc) we didn't really have a frontend. As opposed to if we are working with a frontend, all I have to respond
+back with in the backend is a json. The frontend will handle the rendering, all they need from me is the data needed / json. 
+
+Earlier in this project before I decided to create a 'whatIlearned' section, I also learned about JSON Web Tokens.
+They're pretty cool and to my understanding it's like an alternative to sessions / cookies that I'm more familiar with in undergrad.
+I learned what they are, how to create, verify, and keep track of them. Not too bad to get the gist of.
