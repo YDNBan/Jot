@@ -11,3 +11,10 @@ back with in the backend is a json. The frontend will handle the rendering, all 
 Earlier in this project before I decided to create a 'whatIlearned' section, I also learned about JSON Web Tokens.
 They're pretty cool and to my understanding it's like an alternative to sessions / cookies that I'm more familiar with in undergrad.
 I learned what they are, how to create, verify, and keep track of them. Not too bad to get the gist of.
+
+Also earlier (lol), I learned how to use postman! This was a tool I had came accross during my capstone project but at the time
+I didn't really understand what the point of it was or how to use it. But with the help of ChatGPT, I understood the power of postman 
+and how it helps make my life easier especially when wanting to test out my code and verifying if my endpoints do what I want them to.
+I didn't have to create an entire frontend and form page to test out my routes lol! i can just use postman! 
+
+I admit this is probably a very elementry usage and understanding of postman, I'm sure it's capable of much more but I have exposure and a foundation now!
