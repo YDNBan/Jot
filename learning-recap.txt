@@ -18,3 +18,9 @@ and how it helps make my life easier especially when wanting to test out my code
 I didn't have to create an entire frontend and form page to test out my routes lol! i can just use postman! 
 
 I admit this is probably a very elementry usage and understanding of postman, I'm sure it's capable of much more but I have exposure and a foundation now!
+
+v - - 10/5/2025 - - v
+
+Nothing new learned today, got 2 more controller functions done. All the work done today is work I've already done before and am familiar with.
+But it's still good practice and its keeping my knowledge and skillset fresh! Which is the whole point of me working on projects. Do more and learn more. 
+I might not have work experiance but this is the best I can do for now.

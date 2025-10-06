@@ -13,15 +13,31 @@ exports.create = async (req, res)=> {
     } catch(err) {
         return res.status(500).json({message: "server error"});
     }
-    
 }
 
 exports.index = async (req, res)=> {
-    
+    try {
+        const userID = req.user._id;       
+        // We only want the title and updatedAt field
+        const userNotes = await Note.find({user: userID}).select('title updatedAt').sort({updatedAt: -1});
+        return res.json({success: true, notes: userNotes})
+    } catch(err){
+        return res.status(500).json({success: false, message: "server error"});
+    }
 }
 
 exports.select = async (req, res)=> {
-    
+    try {
+        const userID = req.user._id;
+        const noteID = req.note._id;
+        const note = await Note.findOne({user: userID, _id: noteID});
+        // If note not found
+        if(!note){ return res.status(404).json({success: false, message: "Note not found"})}
+
+        return res.json({success: true, note})
+    } catch(err) {
+        return res.status(500).json({success: false, message: "server error"});
+    }
 }
 
 exports.write = async (req, res)=> {
