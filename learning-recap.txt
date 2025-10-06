@@ -27,3 +27,15 @@ I might not have work experiance but this is the best I can do for now.
 
 The objective at this point in time is to complete all my controller functions for the note object / entity / document.
 Once I finish them, I will test the endpoints using Postman! This might even be a chance for me to writing unit tests which is something I overlooked often in my undergrad days.
+
+v - - 10/6/2025 - - v
+
+Short session today I didn't have too much time to work on this but was able to complete my note delete functionaility.
+Nothing new learned today in terms of tools and skills, but I came across a design realization.
+
+As I was thinking about how to code my 'write' functionaility for my note model, I had to ask myself 
+what did this application work like in my head? When I picture a finished verison of this project, I always think about google docs.
+A google doc document and it's content isn't just a big string... like the way I made my note content a string in the model schema..
+In google doc you can insert images, make tables and graphs, change the front and color of your text. A large string as a data type isn't doing all of that.
+I was in a mental block, I asked GPT what would a editor like google doc have the content of their document look like in their schema.
+A JSON apparently. But we'll look more into that another day.

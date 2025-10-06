@@ -29,7 +29,7 @@ exports.index = async (req, res)=> {
 exports.select = async (req, res)=> {
     try {
         const userID = req.user._id;
-        const noteID = req.note._id;
+        const noteID = req.note._id; // Will fix to "const noteID = req.params.id;"
         const note = await Note.findOne({user: userID, _id: noteID});
         // If note not found
         if(!note){ return res.status(404).json({success: false, message: "Note not found"})}
@@ -45,5 +45,15 @@ exports.write = async (req, res)=> {
 }
 
 exports.delete = async (req, res)=> {
-    
+    try {
+        const userID = req.user._id;
+        const noteID = req.params.id;
+        const result = await Note.deleteOne({user: userID, _id: noteID});
+        if (result.deletedCount == 0){
+            return res.status(404).json({message: "Note not found"})
+        }
+        return res.status(200).json({message: "Delete Succesful"});
+    } catch (err){
+                return res.status(500).json({success: false, message: "server error"});
+    }
 }
