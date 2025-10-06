@@ -24,3 +24,6 @@ v - - 10/5/2025 - - v
 Nothing new learned today, got 2 more controller functions done. All the work done today is work I've already done before and am familiar with.
 But it's still good practice and its keeping my knowledge and skillset fresh! Which is the whole point of me working on projects. Do more and learn more. 
 I might not have work experiance but this is the best I can do for now.
+
+The objective at this point in time is to complete all my controller functions for the note object / entity / document.
+Once I finish them, I will test the endpoints using Postman! This might even be a chance for me to writing unit tests which is something I overlooked often in my undergrad days.
